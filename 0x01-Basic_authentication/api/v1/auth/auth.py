@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-""" Authentication module """
-
+"""
+Auth module for the API
+"""
 from flask import request
 from typing import List, TypeVar
 
@@ -28,6 +29,6 @@ class Auth:
         return request.headers['Authorization']
 
     def current_user(self, request=None) -> TypeVar('User'):
-        """ Retrieves the current authenticated user (to be implemented later) """
+        """ Placeholder for current user method """
         return None
 
